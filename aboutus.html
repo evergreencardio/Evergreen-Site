@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Evergreen Cardiology</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/evergreen.css" media="screen">
+    <!--<link rel="stylesheet" href="/css/evergreenprint.css" media="print">-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load",function() {
+            function fade() {
+                $('.fade').each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                    
+                    /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+                    windowBottom = windowBottom + 420;  
+                    
+                    /* If the object is completely visible in the window, fade it in */
+                    if (objectBottom < windowBottom) {
+                        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+                    } else {
+                        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+                    }
+                });
+            }
+            fade(); //Fade in completely visible elements during page-load
+            $(window).scroll(function() {fade();}); //Fade in elements during scroll
+        });
+    </script>
+    <script>
+        $(window).on("load",function() {
+            function qfade() {
+                $('.qfade').each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                    
+                    /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+                    windowBottom = windowBottom + 650;  
+                    
+                    /* If the object is completely visible in the window, fade it in */
+                    if (objectBottom < windowBottom) {
+                        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+                    } else {
+                        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+                    }
+                });
+            }
+            qfade(); //Fade in completely visible elements during page-load
+            $(window).scroll(function() {qfade();}); //Fade in elements during scroll
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <a href="index.html"><img style="float: left;" class="logo" src="/images/evergreen_logo_black.png" alt="Evergreen Logo" width="200" height="55"></a>
+            <h6>Evergreen Cardiology></h6>
+        </div>
+        <div id="main-nav-menu">
+            <ul id="main-nav-ul">
+                <li><a class="navbar-item" href=index.html>HOME</a></li>
+                <li class="current-page-item"><a class="navbar-item" href=aboutus.html>ABOUT US</a></li>
+                <li><a class="navbar-item" href=services.html>SERVICES</a></li>
+                <li><a class="navbar-item" href=resources.html>PATIENT RESOURCES</a></li>
+                <li><a class="navbar-item" href=contactus.html>CONTACT US</a></li>
+                <li><a class="rounded-button-main" href="https://my.eclinicalworks.com/eCRM/jsp/index.jsp"
+               target="_blank">PATIENT PORTAL</a></li>
+            </ul>
+        </div>
+	</div>
+    <main>
+        <br class="clearboth">
+        <div class="v2-short-header">
+            <h5>About Us</h5>
+        </div>
+        <div class="panel welcome">
+            <i class="fa fa-tree"></i>
+            <h2 class="decorated"><span>OUR MISSION</span></h2>
+			<!--<hr>-->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum eros et leo
+                luctus ullamcorper. Mauris lorem tortor, convallis vel neque dignissim, tempor
+                scelerisque nisi. Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Sed aliquam risus id augue consequat, sed venenatis
+                est consequat. Ut lacinia turpis in enim auctor elementum.</p>
+		</div>
+        <div class="panel physicians qfade">
+            <h2 class="decorated-white"><span>OUR PHYSICIANS</span></h2>
+            <p>Evergreen's cardiologists are dedicated to giving you the best care possible.</p>
+            <ul class="ch-grid">
+	           <li>
+                   <div class="ch-item ch-img-1">
+                       <div class="ch-info">
+                           <a id="website" href="#">website</a>
+                           <a id="twitter" href="http://www.twitter.com">L</a>
+                           <a id="linkedin" href="http://www.linkedin.com">I</a>
+                       </div>
+                   </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-2">
+                        <div class="ch-info">
+                            <a id="website" href="#">website</a>
+                            <a id="twitter" href="http://www.twitter.com">L</a>
+                            <a id="linkedin" href="http://www.linkedin.com">I</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-item ch-img-3">
+                        <div class="ch-info">
+                            <a id="website" href="#">website</a>
+                            <a id="twitter" href="http://www.twitter.com">L</a>
+                            <a id="linkedin" href="http://www.linkedin.com">I</a>
+                        </div>
+                    </div>
+                </li
+            </ul>
+            <ul class="ch-grid">
+                <li>
+                    <div class="ch-description">
+                        <h3>DR. ERIC JONES</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque
+                            penatibus et magnis dis parturient montes, nascetur.</p>
+                        <h4><i class="fa fa-phone"></i>1234567890<br><i class="fa fa-envelope"></i>name@example.com<br><i class="fa fa-fax"></i>1234567890</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-description">
+                        <h3>DR. JOHN SMITH</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                            natoque penatibus et magnis dis parturient montes, nascetur</p>
+                        <h4><i class="fa fa-phone"></i>1234567890<br><i class="fa fa-envelope"></i>name@example.com<br><i class="fa fa-fax"></i>1234567890</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="ch-description">
+                        <h3>DR. JANE DOE</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur.</p>
+                        <h4><i class="fa fa-phone"></i>1234567890<br><i class="fa fa-envelope"></i>name@example.com<br><i class="fa fa-fax"></i>1234567890</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+	</main>
+    <footer>
+        <ul class="footer-columns">
+            <li class="footer-1">
+                <h3>LOCATIONS</h3>
+                <ul class="fa-ul">
+                    <li><p><i class="fa-li fa fa-map-marker"></i>123 State St<br>City, State ZIPCODE</p></li>
+                    <li><p><i class="fa-li fa fa-map-marker"></i>456 Main St<br>City, State ZIPCODE</p></li>
+                </ul>
+            </li>
+            <li class="footer-1">
+                <h3>CONTACT US</h3>
+                <ul class="fa-ul">
+                    <li><p><i class="fa-li fa fa-phone"></i>1234567890</p></li>
+                    <li><p><i class="fa-li fa fa-envelope-o"></i>name@example.com</p></li>
+                    <li><p><i class="fa-li fa fa-clock-o"></i>Mon-Thurs: 9am-3pm<br>Sat: 12pm-3pm</p></li>
+                </ul>
+            </li>
+            <li class="footer-1">
+                <h3>INFORMATION</h3>
+                <ul class="fa-ul">
+                    <li><a href="#"><i class="fa-li fa fa-paperclip"></i>Terms</a></li>
+                    <li><a href="#"><i class="fa-li fa fa-shield"></i>Privacy</a></li>
+                    <li><a href="#"><i class="fa-li fa fa-sitemap"></i>Sitemap</a></li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="footer-line">
+        <p id="copyright">&copy;&nbsp;2015 Evergreen Cardiology</p>
+	</footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</body>
+</html>

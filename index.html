@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Evergreen Cardiology</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Seaweed+Script' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="/css/evergreen.css" media="screen">
+    <!--<link rel="stylesheet" href="/css/evergreenprint.css" media="print">-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load",function() {
+            function fade() {
+                $('.fade').each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                    
+                    /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+                    windowBottom = windowBottom + 170;  
+                    
+                    /* If the object is completely visible in the window, fade it in */
+                    if (objectBottom < windowBottom) {
+                        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+                    } else {
+                        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+                    }
+                });
+            }
+            fade(); //Fade in completely visible elements during page-load
+            $(window).scroll(function() {fade();}); //Fade in elements during scroll
+        });
+    </script>
+        
+    <script>
+        $(window).on("load",function() {
+            function qfade() {
+                $('.qfade').each(function() {
+                    /* Check the location of each desired element */
+                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                    
+                    /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
+                    windowBottom = windowBottom + 650;  
+                    
+                    /* If the object is completely visible in the window, fade it in */
+                    if (objectBottom < windowBottom) {
+                        if ($(this).css('opacity')==0) {$(this).fadeTo(500,1);}
+                    } else {
+                        if ($(this).css('opacity')==1) {$(this).fadeTo(500,0);}
+                    }
+                });
+            }
+            qfade(); //Fade in completely visible elements during page-load
+            $(window).scroll(function() {qfade();}); //Fade in elements during scroll
+        });
+    </script>
+</head>
+<body>
+    <header>
+	</header>
+    <div class="bg-image">
+        <a href="index.html"><img class="logo" src="/images/evergreen_logo.png" alt="Evergreen Logo" width="200" height="55"></a>
+        <h6>Evergreen Cardiology></h6>
+        <nav>
+            <ul>
+                <li><a class="navbar-item" href="index.html">HOME</a></li>
+                <li><a class="navbar-item" href="aboutus.html">ABOUT US</a></li>
+                <li><a class="navbar-item" href=services.html>SERVICES</a></li>
+                <li><a class="navbar-item" href=resources.html>PATIENT RESOURCES</a></li>
+                <li><a class="navbar-item" href=contactus.html>CONTACT US</a></li>
+                <li><a class="rounded-button" href="https://my.eclinicalworks.com/eCRM/jsp/index.jsp"
+               target="_blank">PATIENT PORTAL</a></li>
+            </ul>
+		</nav>
+        <div id="splash-slogan">
+            <img src="images/heart_icon_white.png" alt="heart icon" width="83" height="83">
+            <p>We are inspired by the <span id="handwriting">heart</span>.</p>
+            <br><br><br> 
+            <a href=#welcome-panel class="smoothScroll"><i class="fa fa-angle-double-down"></i></a>
+        </div>
+	</div>
+	<main>
+		<a name="welcome-panel"></a>
+        <div class="panel welcome fade">
+            <i class="fa fa-tree"></i>
+            <h2 class="decorated"><span>WELCOME</span></h2>
+			<!--<hr>-->
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum eros et leo
+                luctus ullamcorper. Mauris lorem tortor, convallis vel neque dignissim, tempor
+                scelerisque nisi. Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Sed aliquam risus id augue consequat, sed venenatis
+                est consequat. Ut lacinia turpis in enim auctor elementum.</p>
+            <br>
+            <h3><a class="button arrow" href="contactus.html#bookappointment">Book an Appointment</a></h3>
+		</div>
+        <div class="panel quote-panel">
+            <h2>The groundwork of all happiness is health.</h2>
+            <p>James Leigh Hunt</p>
+        </div>
+        <div class="panel welcome slider-panel qfade">
+            <h2 class="decorated"><span>OUR PHYSICIANS</span></h2>
+            <p>Evergreen's three cardiologists are dedicated to giving you the best care possible.</p>
+            <div class="slider center slick-slider">
+                <div id="item-1" class="pic-element">
+                    <img src="images/transparent_profile.png">
+                    <!--<h3>IMAGE</h3>-->
+                    <h4>Dr. Erin Brown</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                            natoque penatibus et magnis dis parturient montes, nascetur</p>
+                    <h6><i class="fa fa-phone"></i>1234567890</h6>
+                    <h6><i class="fa fa-envelope"></i>name@example.com</h6>
+                    <h6><i class="fa fa-fax"></i>1234567890</h6>
+                    <h5><a class="button" href="#">Website</a></h5>
+                </div>
+                <div id="item-2" class="pic-element">
+                    <img src="images/transparent_profile.png">
+                    <!--<h3>IMAGE</h3>-->
+                    <h4>Dr. Jane Smith</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                            natoque penatibus et magnis dis parturient montes, nascetur</p>
+                    <h6><i class="fa fa-phone"></i>1234567890</h6>
+                    <h6><i class="fa fa-envelope"></i>name@example.com</h6>
+                    <h6><i class="fa fa-fax"></i>1234567890</h6>
+                    <h5><a class="button" href="#">Website</a></h5>
+                </div>
+                <div id="item-3" class="pic-element">
+                    <img src="images/transparent_profile.png">
+                    <!--<h3>IMAGE</h3>-->
+                    <h4>Dr. Eric Jones</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                            natoque penatibus et magnis dis parturient montes, nascetur</p>
+                    <h6>Please not that Dr. _____ is not currently accepting patients.</h6>
+                </div>
+            </div>
+        </div>
+	</main>
+	
+    <footer>
+        <ul class="footer-columns">
+            <li class="footer-1">
+                <h3>LOCATIONS</h3>
+                <ul class="fa-ul">
+                    <li><p><i class="fa-li fa fa-map-marker"></i>123 State St<br>City, State ZIPCODE</p></li>
+                    <li><p><i class="fa-li fa fa-map-marker"></i>456 Main St<br>City, State ZIPCODE</p></li>
+                </ul>
+            </li>
+            <li class="footer-1">
+                <h3>CONTACT US</h3>
+                <ul class="fa-ul">
+                    <li><p><i class="fa-li fa fa-phone"></i>1234567890</p></li>
+                    <li><p><i class="fa-li fa fa-envelope-o"></i>name@example.com</p></li>
+                    <li><p><i class="fa-li fa fa-clock-o"></i>Mon-Thurs: 9am-3pm<br>Sat: 12pm-3pm</p></li>
+                </ul>
+            </li>
+            <li class="footer-1">
+                <h3>INFORMATION</h3>
+                <ul class="fa-ul">
+                    <li><a href="#"><i class="fa-li fa fa-paperclip"></i>Terms</a></li>
+                    <li><a href="privacy.html"><i class="fa-li fa fa-shield"></i>Privacy</a></li>
+                    <li><a href="#"><i class="fa-li fa fa-sitemap"></i>Sitemap</a></li>
+                </ul>
+            </li>
+        </ul>
+        <hr class="footer-line">
+        <p id="copyright">&copy;&nbsp;2015 Evergreen Cardiology</p>
+	</footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="css/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $('.center').slick({
+        centerMode: true,
+        infinite: false,
+        variableWidth: true,
+        initialSlide: 0,
+        centerPadding: '60px',
+        slidesToShow: 1,
+        speed: 500,
+    });
+  </script>  
+    <script>
+    var divs = $('#splash-slogan');
+$(window).scroll(function(){
+   if($(window).scrollTop()<800){
+         divs.stop(true,true).fadeIn("slow");
+   } else {
+         divs.stop(true,true).fadeOut("slow");
+   }
+});
+</script>
+</body>
+</html>
