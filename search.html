@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Evergreen Cardiology | Search </title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,600,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
+    <link href="/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/evergreen.css" media="screen">
+    <!--<link rel="stylesheet" href="/css/evergreenprint.css" media="print">-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <link href="/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <script src="/css/tipuesearch/tipuesearch_set.js"></script>
+    <script src="/css/tipuesearch/tipuesearch.min.js"></script>
+    
+    
+</head>
+    
+<body>
+    <div class="header">
+        <div id="logo">
+            <a href="index.html"><img style="float: left;" class="logo" src="/images/evergreen_logo_black.png" alt="Evergreen Logo" width="200" height="55"></a>
+            <h6>Evergreen Cardiology></h6>
+        </div>
+        <div id="main-nav-menu">
+            <ul id="main-nav-ul">
+                <li><a class="navbar-item" href=index.html>HOME</a></li>
+                <li class="current-page-item"><a class="navbar-item" href=aboutus.html>ABOUT US</a></li>
+                <li><a class="navbar-item" href=services.html>SERVICES</a></li>
+                <li><a class="navbar-item" href=resources.html>PATIENT RESOURCES</a></li>
+                <li><a class="navbar-item" href=contactus.html>CONTACT US</a></li>
+                <li><a class="rounded-button-main" href="https://my.eclinicalworks.com/eCRM/jsp/index.jsp"
+               target="_blank">PATIENT PORTAL</a></li>
+            </ul>
+        </div>
+	</div>
+    <main>
+        <br class="clearboth">
+        <div class="v2-short-header">
+            <h5>SEARCH</h5>
+        </div>
+        <div id="search">
+            <form action="search.html">
+                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+            </form>
+            <div id="tipue_search_content">
+                <div class="tipue_search_spinner">
+                    <div class="tipue_search_rect1"></div>
+                    <div class="tipue_search_rect2"></div>
+                    <div class="rect3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    
+
+    <script>
+        $(document).ready(function() {
+            $('#tipue_search_input').tipuesearch({
+                'mode': 'live',
+                'newWindow': true
+            });
+        });
+    </script>
+</body>
+</html>
