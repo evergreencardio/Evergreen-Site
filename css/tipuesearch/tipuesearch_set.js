@@ -21,9 +21,15 @@ var tipuesearch_stop_words = ["a", "about", "above", "after", "again", "against"
 // Word replace
 
 var tipuesearch_replace = {'words': [
-     {'word': 'tipua', 'replace_with': 'tipue'},
-     {'word': 'javscript', 'replace_with': 'javascript'},
-     {'word': 'jqeury', 'replace_with': 'jquery'}
+    {'word': 'cardiiology', 'replace_with': 'cardiology'},
+    {'word': 'cardiolgy', 'replace_with': 'cardiology'},
+    {'word': 'cardilogy', 'replace_with': 'cardiology'},
+    {'word': 'cardiolagy', 'replace_with': 'cardiology'},
+    {'word': 'physicin', 'replace_with': 'physician'},
+    {'word': 'pysician', 'replace_with': 'physician'},
+    {'word': 'pyhsician', 'replace_with': 'physician'},
+    {'word': 'mah', 'replace_with': 'Ma'},
+    {'word': 'liin', 'replace_with': 'Lin'}
 ]};
 
 

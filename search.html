@@ -30,7 +30,7 @@
         <div id="main-nav-menu">
             <ul id="main-nav-ul">
                 <li><a class="navbar-item" href=index.html>HOME</a></li>
-                <li class="current-page-item"><a class="navbar-item" href=aboutus.html>ABOUT US</a></li>
+                <li><a class="navbar-item" href=aboutus.html>ABOUT US</a></li>
                 <li><a class="navbar-item" href=services.html>SERVICES</a></li>
                 <li><a class="navbar-item" href=resources.html>PATIENT RESOURCES</a></li>
                 <li><a class="navbar-item" href=contactus.html>CONTACT US</a></li>
@@ -46,7 +46,7 @@
         </div>
         <div id="search">
             <form action="search.html">
-                <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+                <input placeholder="what are you looking for?" type="text" name="q" id="tipue_search_input" autocomplete="off" required>
             </form>
             <div id="tipue_search_content">
                 <div class="tipue_search_spinner">
@@ -65,7 +65,8 @@
         $(document).ready(function() {
             $('#tipue_search_input').tipuesearch({
                 'mode': 'live',
-                'newWindow': true
+                'newWindow': true,
+                'liveContent': 'header'
             });
         });
     </script>

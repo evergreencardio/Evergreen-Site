@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/evergreen.css" media="screen">
+    <link href="/css/tipuesearch/tipuesearch.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="/css/evergreenprint.css" media="print">-->
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -43,6 +44,11 @@
         </div>
         <div id="main-nav-menu">
             <ul>
+                <li>
+                    <form action="search.html">
+                        <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
+                    </form>
+                </li>
                 <li><a class="navbar-item" href=index.html>HOME</a></li>
                 <li><a class="navbar-item" href=aboutus.html>ABOUT US</a></li>
                 <li><a class="navbar-item" href=services.html>SERVICES</a></li>

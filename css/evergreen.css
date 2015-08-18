@@ -16,6 +16,18 @@ nav {
     z-index: 1;
 }
 
+nav li {
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: #FFF;
+}
+
+nav .navbar-item:hover {
+    border-bottom: 2px solid #FFF;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -59,7 +71,7 @@ a {
 }
 
 a:hover {
-	color: #000000;
+	color: #92D1A6;
 }
 
 
@@ -404,6 +416,7 @@ i {
     border: 1px solid white;
     border-radius: 2px;
     padding: 5px 8px;
+    position: static;
 }
 
 .rounded-button:hover {
@@ -421,8 +434,22 @@ i {
     border-color: black;
 }
 
+
 .navbar-item {
-    padding: 10px;
+    padding-top: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition:         border-color 1s ease;
+    -o-transition:      border-color 1s ease;
+    -ms-transition:     border-color 1s ease;
+    -moz-transition:    border-color 1s ease;
+    -webkit-transition: border-color 1s ease;
+}
+
+.navbar-item:hover {
+    border-bottom: 2px solid #92D1A6;
 }
 
 div.header {
@@ -456,7 +483,13 @@ div.header {
     font-size: 0.83em;
     letter-spacing: 1px;
     color: #92D1A6;
+    
 }
+
+#main-nav-menu li {
+    padding-right: 10px;
+}
+
 
 /* ----- End Navigation ----- */
 
@@ -615,6 +648,25 @@ div.header {
 }
 
 /** -------- End Our Physicians --------------- **/
+
+/** --------- SEARCH --------- */
+
+#search {
+    margin: 40px;
+}
+
+#search form{
+    text-align: center;
+}
+
+#search #tipue_search_content {
+    width: 700px ;
+    margin-left: auto ;
+    margin-right: auto ;
+    text-align: center;
+}
+
+/* --------- End Search --------- */
 
 /** -------- FOOTER --------------- **/
 
