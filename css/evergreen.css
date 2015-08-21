@@ -130,6 +130,13 @@ br.clearboth {
     opacity: 0;
 }
 
+.goog-te-gadget {                       /* GOOGLE TRANSLATOR WIDGET */
+    font-size: 0px !important;
+}    
+.goog-te-gadget span {
+    display: none;
+}
+
 /*--------- End General -----------*/
 
 /* ------- HOME PAGE ------- */
@@ -672,7 +679,7 @@ div.header {
 
 footer {
     background-color: #fff;
-    background-image: url(/images/trees_footer2.png);
+    background-image: url(/images/trees_footer3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -685,17 +692,17 @@ footer {
 }
 
 .footer-columns {
-    margin-top: 400px;
+    margin-top: 380px;
 }
 
 .footer-columns li {
     vertical-align: top;
-    padding-right: 80px;
+    padding-right: 60px;
 }
 
 .footer-1 ul li {
     display: block; /* take out if want side-by-side and horizontal icon lists...*/
-    padding: 5px 0px; 
+    padding: 5px px; 
     text-align: left;
 }
 
@@ -704,18 +711,22 @@ footer {
 }
 
 footer h3 {
-    color: #ffffff;
+    color: #fff;
     text-align: center;
-    font-size: 1em;
+    font-weight: 600;
+    font-size: 1.1em;
     letter-spacing: 1px;
+    text-align: left;
+    padding-left: 
 }
 
 footer a {
     color: #ffffff;
-    font-family: "Merriweather", serif;
-    font-size: 11px;
+    font-family: "Open Sans", serif;
+    font-size: 0.97em;
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.px;
+    line-height: 1.8em;
 }
 
 footer a:hover {
@@ -724,29 +735,32 @@ footer a:hover {
 }
 
 footer .fa {
-    font-size: 14px;
+    font-size: 1.2em;
 }
 
 footer p {
-    font-family: "Merriweather", serif;
     color: #ffffff;
-    font-size: 11px;
-    letter-spacing: 0.5px;
-    display: inline;
+    font-family: "Open Sans", serif;
+    font-size: 0.97em;
     font-weight: 300;
-    line-height: 12px;
+    letter-spacing: 0.8px;
+    line-height: 1.8em;
 } 
 
 #copyright {
-    font-size: 8px;
+    font-size: 9px;
     font-family: "Merriweather", serif;
 }
 
 footer hr {
     float: center;
-    width: 90%;
-    margin-top: 40px;
-}
+    width: 75%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 1.5px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}/*
 
 hr.footer-line {
     padding: 0;
@@ -763,7 +777,7 @@ hr.footer-line:after {
 	top: -13px;
 	padding: 0 10px;
 	/*background: #74BC8A;*/
-	color: white;
+	/*color: white;
 	font-size: 18px;
 }
 
