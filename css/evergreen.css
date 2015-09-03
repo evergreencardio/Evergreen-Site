@@ -5,12 +5,14 @@ body {
 }
 
 nav {
-    float: right;
+    /*float: right;*/
+    text-align: center;
 	font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 0.83em;
     letter-spacing: 1px;
     padding: 2.3em;
+    padding-top: 4.5em;
     color: #fff;
     position: relative;
     z-index: 1;
@@ -28,7 +30,7 @@ nav .navbar-item:hover {
     border-bottom: 2px solid #FFF;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -56,10 +58,28 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-family: "Open Sans", sans-serif;
+    color: #857a6a;
+    font-weight: 300;
+    font-size: 0.88em; 
+    letter-spacing: 1.5px;
+}
+
+h5 {
+    font-family: "Open Sans", sans-serif;
+    color: #A4D9B5;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.18em;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
 p {
     font-family: "Open Sans", sans-serif;
 	font-weight: 100;
-    color: #666566;
+    color: #857a6a;
     font-size: 13px;
     letter-spacing: 2px;
     line-height: 165%;
@@ -168,7 +188,7 @@ br.clearboth {
     display: block;
     clear: both; 
     text-align: center;
-    padding-top: 12%;
+    padding-top: 0;
     position: fixed;
     left: 0px;
     width: 100%;
@@ -328,6 +348,169 @@ br.clearboth {
     color: #fff;
 }
 
+.mission {
+    background-color: #A4D9B5;
+}
+
+.mission h2, .mission .fa, .mission p {
+    color: #FFFFFF;
+}
+
+.staff {
+    background-color: #FFFFFF;
+    background-image: none;
+    text-align: center;
+    position: relative;
+    padding: 100px 200px;
+    z-index: 2;
+    padding-bottom: 0;
+}
+
+.staff h2 {
+    color: #BA9864;
+}
+
+#doctor-box {
+    background-color: #92D1A6;
+    padding: 60px 120px 40px 120px;
+    height: 330px;
+}
+
+#doctor-box h3 {
+    color: #FFFFFF;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+#doctor-box h4 {
+   line-height: 0;
+    padding-bottom: 15px;
+    color: #ffffff;
+}
+
+#doctor-box p {
+    color: #E8FFEF;
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    line-height: 1.6em;
+    font-weight: 300;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#doctor-box .fa {
+    margin: 0;
+}
+
+#doctor-box li p {
+    margin: 0;
+}
+
+#doctor-box img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+#doctor-box-left {
+    float: left;
+}
+
+#doctor-box-right {
+    padding-right: 0px;
+    text-align: left;
+    margin-left: 40%;
+    padding-top: 40px;
+}
+
+.staff-grid {
+    padding-top: 80px;
+}
+
+.staff-row {
+    margin: 0px;
+	padding: 0px;
+    padding-bottom: 40px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.row-2 {
+    padding-bottom: 0;
+}
+
+.staff-row:after, .astaff:before {
+    content: '';
+    display: table;
+}
+
+.astaff:after {
+    clear: both;
+}
+
+.staff-row li {
+    width: 250px;
+    height: 280px;
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+.astaff {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.staff-row img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+.staff-row h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    color: #92D1A6;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.staff-row h5 {
+    color: #BA9864 ;
+    font-weight: 100;
+    font-size: 1.02em;
+    letter-spacing: 0.1em;
+    margin: 0;
+    padding: 0.85em 0;
+    text-transform: capitalize;
+}
+
+.staff-row p {
+    font-family: "Merriweather", sans-serif;
+    font-size: 0.75em;
+    padding: 0px 0px;
+    letter-spacing: 0.1em;
+    margin: 0;
+    color: #857a6a;
+}
+
+/*.staff-row span {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #A4D9B5;
+}*/
+
 
 i {
     padding: 5px;
@@ -385,18 +568,47 @@ i {
     left: 100%;
 }
 
+.decorated-gold {
+    overflow: hidden;
+    text-align: center;
+}
+
+.decorated-gold > span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated-gold > span:before, .decorated-gold > span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid rgba(186, 152, 100, 0.4);
+    width: 90px; 
+    margin: 0 20px;
+}
+
+.decorated-gold > span:before{
+    right: 100%;
+}
+.decorated-gold > span:after{
+    left: 100%;
+}
+
 .quote-panel {
     background-color: #fff;
     background-image: 
     linear-gradient(
-      rgba(116, 188, 138, 0.5),
-      rgba(255, 255, 255, 0.2)
+      rgba(116, 188, 138, 0.8),
+      rgba(116, 188, 138, 0.5)
     ),
-    url(/images/trees_quote.jpeg);
+    url(/images/hearthands_quote.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0% 40%;
     background-size: cover;
     height: 150px;
+    position: relative;
+    z-index: 4;
+    display: block;
 }
 
 .quote-panel h2 {
@@ -414,6 +626,18 @@ i {
     padding-top: 45px;
     font-weight: 600;
 }
+
+.banner h3 {
+    padding: 0.7em 0px;
+    margin: 3.5em 30em;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    color: #BA9864;
+    border: 1px solid #BA9864;
+}
+
+
 
 /* ------ End PANEL SETUPS ------*/
 
@@ -463,13 +687,15 @@ div.header {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: absolute;
+    /*position: absolute;*/
     background-color: #ffffff;
+    display: block;
 }
 
 .logo {
-    float: left;
-    padding: 20px 20px 10px 20px;
+    /*float: left;*/
+    padding: 20px;
+    display: inline;
 }
 
 #logo h6 {              /*Hidden Text Image Replacement*/
@@ -482,6 +708,7 @@ div.header {
 #main-nav-menu {                         /* Navigation on pages other than home page */
     float: right;
     padding: 32px;
+    display: inline;
 }
 
 #main-nav-menu a {                              /* NAV MENU ON HOME PAGE */
@@ -500,28 +727,78 @@ div.header {
 
 /* ----- End Navigation ----- */
 
+/* ------ HOME PAGE DOCTOR ------ */
+.doctor-panel {
+    padding-right: 290px;
+    padding-left: 290px;
+    text-align: center;
+    padding-top: 0;
+}
+
+.doctor-panel h2{
+    padding-bottom: 0;
+    padding: 0.5em
+}
+
+.doctor-panel h4 {
+    font-size: 1.1em;
+    margin: 0;
+    color: #BA9864 ;
+}
+
+.doctor-panel h6 {
+    font-family: "Open Sans", sans-serif;
+    color: #74BC8A;
+    font-size: 0.88em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    opacity: 1;
+    display: inline;
+    padding-right: 3em;
+}
+
+.doctor-panel p {
+    padding: 2.6em 1em;
+}
+
+.doctor-panel img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+}
+
+
+/* ------- end doctor page ---- */
 
 .v2-short-header {
     background-color: #A4D9B5;
-    background-image: url(/images/doctor_header3_3.jpg);
+    background-image: 
+    linear-gradient(
+      rgba(116, 188, 138, 0.6),
+      rgba(116, 188, 138, 0.6)
+    ),
+    url(/images/doctor_header3_3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 320px;
-    display: block;
+    height: 260px;
 }
 
 .v2-short-header h5 {
     font-family: "Merriweather", sans-serif;
     color: #fff;
     font-weight: 700;
-    text-align: center;
-    padding-top: 170px;
     letter-spacing: 3px;
     font-size: 1.5em;
-    text-transform: uppercase;
+    line-height: 260px;
+    text-align: center;
 }
 
+.short-header-title {
+    
+}
 
 /** OUR PHYSICIANS on About Us Page **/
 
@@ -572,7 +849,7 @@ div.header {
     font-family: "Merriweather", serif;
     letter-spacing: 1px;
     font-size: 11px;
-    color: #666566;
+    color: #857a6a;
     font-weight: 300;
     border-top: 1px solid rgba(102, 100, 102, 0.2);
     border-bottom: 1px solid rgba(102, 100, 102, 0.2);
@@ -684,15 +961,54 @@ footer {
     background-size: cover;
     background-position: bottom;
     padding-top: 50px;
-    padding-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     height: 700px;
 }
 
+div.book-button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: block;
+    width: 400px;
+}
+
+.book-button a {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    background-color: #BA9864;
+    color: #FFFFFF;
+    border-color: #BA9864;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 3%;
+}
+
+.book-button a:hover {
+    text-decoration: none;
+    color: #BA9864;
+    background-color: white;
+    border-color: #BA9864; 
+}
+
+.book-button .arrow:before{
+    content:"→";
+    position: absolute;
+    color: #BA9864;
+    left: 83%;
+    opacity: 0;
+    -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.book-button .arrow:hover:before{
+    left: 86%;
+    opacity: 1;
+}
+
 .footer-columns {
-    margin-top: 380px;
+    margin-top: 300px;
 }
 
 .footer-columns li {
@@ -711,19 +1027,18 @@ footer {
 }
 
 footer h3 {
-    color: #fff;
+    color: #FFFFFF;
     text-align: center;
     font-weight: 600;
-    font-size: 1.1em;
-    letter-spacing: 1px;
+    font-size: 0.9em;
+    letter-spacing: 4px;
     text-align: left;
-    padding-left: 
 }
 
 footer a {
     color: #ffffff;
-    font-family: "Open Sans", serif;
-    font-size: 0.97em;
+    font-family: "Merriweather", serif;
+    font-size: 0.88em;
     font-weight: 300;
     letter-spacing: 0.px;
     line-height: 1.8em;
@@ -740,8 +1055,8 @@ footer .fa {
 
 footer p {
     color: #ffffff;
-    font-family: "Open Sans", serif;
-    font-size: 0.97em;
+    font-family: "Merriweather", serif;
+    font-size: 0.85em;
     font-weight: 300;
     letter-spacing: 0.8px;
     line-height: 1.8em;
@@ -752,7 +1067,21 @@ footer p {
     font-family: "Merriweather", serif;
 }
 
-footer hr {
+.bottom-bar {
+    background-color: #A2988A ;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom-bar p {
+    
+}
+
+
+/*footer hr {
     float: center;
     width: 75%;
     margin-top: 25px;
@@ -760,7 +1089,7 @@ footer hr {
     border: 0;
     height: 1.5px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-}/*
+}                    /* Fade out on both ends footer 
 
 hr.footer-line {
     padding: 0;
@@ -768,7 +1097,7 @@ hr.footer-line {
     border-top: medium double #C9C9CA;
     border-color: white;
     text-align: center;
-}
+}                 /* Double with heart footer 
 
 hr.footer-line:after {
 	content: '\002665';
@@ -789,14 +1118,14 @@ hr.footer-line:after {
     padding: 80px 0px;
     margin: 0px;
     padding-bottom: 0px;
-    background-image: url(/images/sanjose_maptransparent.png);
+    /*background-image: url(/images/sanjose_maptransparent.png);
     background-repeat: no-repeat;
     background-position: 100% 0%;
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: cover; 
+    background-size: cover; */
 }
 
 .slider {
@@ -907,7 +1236,7 @@ h5 a:hover {
 .center .slick-center p {
     font-family: "Merriweather", serif;
     letter-spacing: 1px;
-    color: #666566;
+    color: #857a6a;
     font-size: 10px;
     font-weight: 300;
     /*border-top: 1px solid rgba(102, 100, 102, 0.2);
@@ -1013,7 +1342,7 @@ h5 a:hover {
     top: 0px;
     width: 100%;
     height: 70px;
-    background: #92D1A6;
+    background: #F5F3EF;
     z-index: 9999;
 }
 
@@ -1026,7 +1355,7 @@ h5 a:hover {
 
 #topnav li {
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: px;
     padding-right: 10px;
     padding-left: 10px;
     margin: 0 45px 0 0;
@@ -1036,19 +1365,24 @@ h5 a:hover {
 
 #topnav li a {
     font-family: "Open Sans", sans-serif;
-    font-weight: 300;
-    font-size: 0.97em;
-    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 0.85em;
+    color: rgba(186, 152, 100, 0.5);
     text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
 }
               
 #topnav li.current a {
-    color: #FFF;
-    font-size: 1em;
+    color: rgba(186, 152, 100, 1);
+    font-weight: 400;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
 }
 
 #topnav li a:hover {
-    color: #FFF;
+    color: rgba(186, 152, 100, 1);
 }
 /*#floating-nav ul li:hover {
     border-bottom: 5px solid #FFFFFF;
@@ -1056,6 +1390,130 @@ h5 a:hover {
 
 #topnav .fa {
     display: block;
+}
+
+#package-download {
+    margin: 0px 407px;
+}
+
+#forms {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+#forms .download-button h3 {
+    color: #FFFFFF;
+    margin: 0;
+}
+
+#new-patient-package {
+    float: left;
+    padding: 22px;
+    border: 1px solid rgba(186, 152, 100, 0.4);
+}
+
+#new-patient-package h2 {
+    padding-bottom: 0.05em;
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    letter-spacing: 0.15em; 
+    color: #A4D9B5;
+}
+
+#new-patient-package p {
+    padding: 0;
+    margin: 0;
+}
+
+.download-button {
+    margin-left: 60%;
+    background-color: #92D1A6;
+    padding: 20px;
+    margin-right: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.download-button:hover {
+    background-color: #96E8B0;
+}
+
+.download-button .fa {
+    color: #FFFFFF;
+    font-size: 2em;
+    padding: 0;
+}
+
+#forms h5 {
+    margin-top: 70px;
+}
+
+.forms-row a {
+    font-family: "Open Sans", sans-serif;
+    background-color: #92D1A6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    letter-spacing: 0.17em;
+    padding: 15px 50px;
+}
+
+.forms-row a:hover  {                       
+    background-color: #96E8B0;
+    color: #FFFFFF;
+}
+
+.forms-row {
+    clear: left;
+    margin: 0px;
+	padding: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.forms-row:after, .forms:before {
+    content: '';
+    display: table;
+}
+
+.forms-row:after {
+    clear: both;
+}
+
+.forms-row li {
+    width: 220px;
+    height: 220px;
+    display: inline-block;
+    margin: 0px 55px;
+    border: 1px solid rgba(186, 152, 100, 0.4);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.forms-row h4 {
+    font-family: "Merriweather", serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    color: #A4D9B5;
+}
+
+.forms-row p {
+    padding: 0px 20px;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
 }
 
 /*---------------- End RESOURCES PAGE ---------------*/
@@ -1115,7 +1573,7 @@ h5 a:hover {
 
 #bookappointment h4 {
     font-family: "Open Sans", sans-serif;
-    color: #666566;
+    color: #857a6a;
     font-size: 0.9em;
     font-weight: 200;
     letter-spacing: 2px;
@@ -1593,5 +2051,72 @@ zzOhQGBBU8uDR0/a89rR1dP34tXA0JuRsXcfPk2sWZewYVPSlm07dmWEpcUcWhW1YlnEkrg9Wfty
   font-style: normal;
 }
 
+/* ------------- MEDIA QUERIES ------------ */
+
+@media only screen and (max-width: 768px) {
+    main { 
+        padding: 0.6em; 
+        margin: 0;
+    }
+    
+    .panel {
+        padding: 1em 5em; 
+        margin: 0;
+    }
+    
+    p {
+        font-size: 0.75em;
+        line-height: 2em;
+    }
+    
+    nav { 
+        float: none;
+        width: auto;
+        padding: 0;
+        background-color: #fff;
+    }
+    
+     nav a {
+         color: #92D1A6;
+     }
+    
+    nav li {
+        display: block;
+        margin-bottom: 25px;
+    }
+    
+    nav ul {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .logo {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;   
+        padding-bottom: 0;
+    }
+    
+    #splash-slogan {
+        font-size: 0.6em;
+    }
+    
+    #splash-slogan img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    #handwriting {
+        font-size: 1em;
+    }
+    
+    .fade, .qfade {
+        opacity: 1;
+    }
+    
+}
+        
 
 
