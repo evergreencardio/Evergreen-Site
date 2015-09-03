@@ -45,7 +45,7 @@
                     var windowBottom = $(window).scrollTop() + $(window).innerHeight();
                     
                     /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
-                    windowBottom = windowBottom + 650;  
+                    windowBottom = windowBottom + 1000;  
                     
                     /* If the object is completely visible in the window, fade it in */
                     if (objectBottom < windowBottom) {
@@ -86,12 +86,11 @@
     <main>
         <br class="clearboth">
         <div class="v2-short-header">
-            <h5>About Us</h5>
+            <h5 class="short-header-title">About Us</h5>
         </div>
-        
-        <div class="panel welcome">
+        <div class="panel welcome mission">
             <i class="fa fa-tree"></i>
-            <h2 class="decorated"><span>OUR MISSION</span></h2>
+            <h2 class="decorated-white"><span>OUR MISSION</span></h2>
 			<!--<hr>-->
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum eros et leo
                 luctus ullamcorper. Mauris lorem tortor, convallis vel neque dignissim, tempor
@@ -99,7 +98,77 @@
                 nostra, per inceptos himenaeos. Sed aliquam risus id augue consequat, sed venenatis
                 est consequat. Ut lacinia turpis in enim auctor elementum.</p>
 		</div>
-        <div class="panel physicians qfade">
+        <div class="panel welcome staff qfade">
+            <h2 class="decorated-gold"><span>OUR STAFF</span></h2>
+            <div id="doctor-box">
+                <div id="doctor-box-left">
+                    <img src="images/transparent_profile.png">
+                    <h3>DR. ADRIAN MA, M.D.</h3>
+                    <h4>Cardiologist</h4>
+                    <p>English</p>
+                    <p>Cantonese</p>
+                    <p>Mandarin</p>
+                </div>
+                <div id="doctor-box-right">
+                    <p>Dr. Adrian Ma graduated from Hong Kong Pui Ching Middle School in 1977 and attended medical school in Sydney, Australia. He later completed his Internal Medicine residency and the Cardiology fellowship in the United States. After a stint in academia, he began his private practice in San Jose, California and has been in active practice close to 20 years. In 2012, he went back to school and was conferred Master of Science in Health Care Management by Harvard University 2 years later. He is currently an adjunct faculty in the cardiology division of Stanford University Medical School. In 2014, he was voted by his pears as one the most outstanding cardiologists in the Bay Area.</p>
+                </div>
+            </div>
+            <div class="staff-grid">
+            <ul class="staff-row row-1">
+	           <li>
+                   <div class="astaff ser-1">
+                       <img src="images/transparent_profile.png">
+                       <h4>CECILIA MA</h4>
+                       <h5>Office Manager</h5>
+                       <p>English, Cantonese, Mandarin</p>
+                   </div>
+                </li>
+                <li>
+                   <div class="service ser-1">
+                       <img src="images/transparent_profile.png">
+                       <h4>Jane Phung</h4>
+                       <h5>Front Desk Receptionist</h5>
+                       <p>English, Mandarin, Cantonese, Vietnamese</p>
+                   </div>
+                </li>
+                <li>
+                   <div class="service ser-1">
+                       <img src="images/transparent_profile.png">
+                       <h4>Riza Centillas</h4>
+                       <h5>Medical Assistant</h5>
+                       <p>English, Tagalog</p>
+                   </div>
+                </li>
+            </ul>
+            <ul class="staff-row row-2">
+	           <li>
+                   <div class="astaff ser-1">
+                       <img src="images/transparent_profile.png">
+                       <h4>Rosa Guzman</h4>
+                       <h5>Medical Assistant</h5>
+                       <p>English, Spanish</p>
+                   </div>
+                </li>
+                <li>
+                   <div class="service ser-1">
+                       <img src="images/transparent_profile.png">
+                       <h4>Ifur Batong</h4>
+                       <h5>Medical Assistant</h5>
+                       <p>English, Tagalog</p>
+                   </div>
+                </li>
+                <li>
+                   <div class="service ser-1">
+                       <img src="images/transparent_profile.png">
+                       <h4>Allen Paloma</h4>
+                       <h5>Technician</h5>
+                       <p>English, Tagalog</p>
+                   </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <!--<div class="panel physicians qfade">
             <h2 class="decorated-white"><span>OUR PHYSICIANS</span></h2>
             <p>Evergreen's cardiologists are dedicated to giving you the best care possible.</p>
             <ul class="ch-grid">
@@ -160,9 +229,10 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </div>-->
 	</main>
     <footer>
+        <div class="book-button"><a class="button arrow" href="contactus.html#bookappointment">Book an Appointment</a></div>
         <ul class="footer-columns">
             <li class="footer-1">
                 <h3>QUICK LINKS</h3>
@@ -176,10 +246,10 @@
                 </ul>
             </li>
             <li class="footer-1">
-                <h3>LOCATIONS</h3>
+                <h3>LOCATION</h3>
                 <ul class="fa-ul">
-                    <li><p><i class="fa-li fa fa-map-marker"></i><span class="notranslate">123 State St<br>City, State ZIPCODE</span></p></li>
-                    <li><p><i class="fa-li fa fa-map-marker"></i>456 Main St<br>City, State ZIPCODE</p></li>
+                    <li><p><i class="fa-li fa fa-map-marker"></i><span class="notranslate">200 Jose Figueres Ave<br>San Jose, CA 95116</span></p></li>
+                    <li><p><i class="fa-li fa fa-clock-o"></i>Mon-Fri: 9:30am-4:30pm</p></li>
                 </ul>
             </li>
             <li class="footer-1">
@@ -187,14 +257,6 @@
                 <ul class="fa-ul">
                     <li><p><i class="fa-li fa fa-phone"></i>1234567890</p></li>
                     <li><p><i class="fa-li fa fa-envelope"></i>name@example.com</p></li>
-                    <li><p><i class="fa-li fa fa-clock-o"></i>Mon-Thurs: 9am-3pm<br>Sat: 12pm-3pm</p></li>
-                </ul>
-            </li>
-            <li class="footer-1">
-                <h3>INFORMATION</h3>
-                <ul class="fa-ul">
-                    <li><a href="#"><i class="fa-li fa fa-paperclip"></i>Terms</a></li>
-                    <li><a href="#"><i class="fa-li fa fa-shield"></i>Privacy</a></li>
                 </ul>
             </li>
             <li class="footer-1">
@@ -208,9 +270,11 @@
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </li>
         </ul>
-        <hr class="footer-line">
-    <p id="copyright">&copy;&nbsp;<span class="notranslate">2015 Evergreen Cardiology</span></p>
-	</footer>
+        <!--<hr class="footer-line">-->
+	<div class="bottom-bar">
+        <p id="copyright">&copy;&nbsp;<span class="notranslate">2015 Evergreen Cardiology</span></p>
+    </div>
+    </footer>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </body>
 </html>
