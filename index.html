@@ -35,8 +35,10 @@
                     }
                 });
             }
-            fade(); //Fade in completely visible elements during page-load
+            if ($(window).width() > 768) {
+                fade(); //Fade in completely visible elements during page-load
             $(window).scroll(function() {fade();}); //Fade in elements during scroll
+            }
         });
     </script>
         
@@ -59,8 +61,10 @@
                     }
                 });
             }
-            qfade(); //Fade in completely visible elements during page-load
+            if ($(window).width() > 768) {
+                qfade(); //Fade in completely visible elements during page-load
             $(window).scroll(function() {qfade();}); //Fade in elements during scroll
+            }
         });
     </script>
 </head>
@@ -68,11 +72,10 @@
     <header>
 	</header>
     <div class="bg-image">
-        <a href="index.html"><img class="logo" src="/images/evergreen_logo.png" alt="Evergreen Logo" width="200" height="55"></a>
         <h6>Evergreen Cardiology></h6>
         <nav>
             <ul>
-                <li><a href="ch-index.html">中文</a></li>
+                <!--<li><a href="ch-index.html">中文</a></li>-->
                 <li><a class="navbar-item current-page-home" href="index.html">HOME</a></li>
                 <li><a class="navbar-item" href="aboutus.html">ABOUT US</a></li>
                 <li><a class="navbar-item" href=services.html>SERVICES</a></li>
@@ -83,9 +86,10 @@
             </ul>
 		</nav>
         <div id="splash-slogan">
-            <img src="images/heart_icon_white.png" alt="heart icon" width="83" height="83">
-            <p>We are inspired by the <span id="handwriting">heart</span>.</p>
-            <br><br><br> 
+            <!--<img src="images/heart_icon_white.png" alt="heart icon" width="83" height="83">-->
+            <img class="logo" src="/images/Logo_White_Vertical.png" alt="Evergreen Logo" width="500" height="386">
+            <!--<p>We are inspired by the <span id="handwriting">heart</span>.</p>-->
+            <br>
             <a href=#welcome-panel class="smoothScroll"><i class="fa fa-angle-double-down"></i></a>
         </div>
 	</div>
@@ -95,8 +99,7 @@
             <i class="fa fa-tree"></i>
             <h2 class="decorated"><span>WELCOME</span></h2>
 			<!--<hr>-->
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum eros et leo
-                luctus ullamcorper. Mauris lorem tortor, convallis vel neque dignissim, tempor
+			<p>At Evergreen Cardiology, we are inspired by the heart. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum eros et leo luctus ullamcorper. Mauris lorem tortor, convallis vel neque dignissim, tempor
                 scelerisque nisi. Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Sed aliquam risus id augue consequat, sed venenatis
                 est consequat. Ut lacinia turpis in enim auctor elementum. We are proud to offer care to patients who speak <strong>Cantonese</strong>, <strong>Mandarin</strong>, <strong>Vietnamese</strong>, <strong>Tagalog</strong>, and <strong>Spanish.</strong></p>
@@ -107,13 +110,26 @@
             <h2>The groundwork of all happiness is health.</h2>
             <p>James Leigh Hunt</p>
         </div>
-        <div class="panel welcome slider-panel qfade">
-            <h2 class="decorated"><span>OUR PHYSICIANS</span></h2>
-            <p>Evergreen's three cardiologists are dedicated to giving you the best care possible.</p>
+        <div class="banner">
+            <h3>Meet our Physician</h3>
+        </div>
+         <div class="panel welcome doctor-panel">
+            <img src="images/transparent_profile.png">
+            <h2 class="decorated"><span>DR. ADRIAN MA, MD</span></h2>
+            <h4>Cardiologist</h4>
+            <p>Dr. Adrian Ma graduated from Hong Kong Pui Ching Middle School in 1977 and attended medical school in Sydney, Australia. He later completed his Internal Medicine residency and the Cardiology fellowship in the United States. After a stint in academia, he began his private practice in San jose, California and has been in active practice close to 20 years. In 2012, he went back to school and was conferred Master of Science in Health Care Management by Harvard University 2 years later. He is currently an adjunct faculty in the cardiology division of Stanford University Medical School. In 2014, he was voted by his pears as one the most outstanding cardiologists in the Bay Area.</p>
+             <h6><i class="fa fa-phone"></i>1234567890</h6>
+                    <h6><i class="fa fa-envelope"></i>name@example.com</h6>
+                    <h6><i class="fa fa-fax"></i>1234567890</h6>
+             
+        </div>
+        <!--<div class="panel welcome slider-panel qfade">
+            <h2 class="decorated"><span>DR. ADRIAN MA</span></h2>
+            <h3>cardiologist</h3>
+            <p>Dr. Adrian Ma is a ________</p>
             <div class="slider center slick-slider">
                 <div id="item-1" class="pic-element">
                     <img src="images/transparent_profile.png">
-                    <!--<h3>IMAGE</h3>-->
                     <h4>Dr. Erin Brown</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
@@ -123,9 +139,8 @@
                     <h6><i class="fa fa-fax"></i>1234567890</h6>
                     <h5><a class="button" href="#">Website</a></h5>
                 </div>
-                <div id="item-2" class="pic-element">
+                <!--<div id="item-2" class="pic-element">
                     <img src="images/transparent_profile.png">
-                    <!--<h3>IMAGE</h3>-->
                     <h4>Dr. Jane Smith</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
@@ -137,7 +152,6 @@
                 </div>
                 <div id="item-3" class="pic-element">
                     <img src="images/transparent_profile.png">
-                    <!--<h3>IMAGE</h3>-->
                     <h4>Dr. Eric Jones</h4>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
@@ -145,7 +159,7 @@
                     <h6>Please not that Dr. _____ is not currently accepting patients.</h6>
                 </div>
             </div>
-        </div>
+        </div>-->
 	</main>
 	
     <footer>
